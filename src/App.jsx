@@ -4,6 +4,7 @@ import {useDispatch, useSelector} from 'react-redux';
 import {addNewTodo, fetchTodos} from './store/todoSlice';
 
 import TodoList from './components/TodoList';
+import GoodsList from './components/GoodsList';
 import InputField from './components/InputField';
 
 import './App.css';
@@ -34,6 +35,7 @@ function App() {
       {error && <h2>An error occured: {error}</h2>}
 
       <TodoList />
+      <GoodsList />
     </div>
   );
 }
